@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>first web page</title>
+    <style>
+        body {
+            background: #e6d49f5e;
+            font-family: Pacifico;
+        }
+
+        span {
+            color: red;
+        }
+
+        header {
+            color: rgb(15, 15, 131);
+            text-align: center;
+        }
+
+        .card {
+            margin: 0 auto;
+            box-shadow: 3px 4px  30px rgba(0, 0, 0, 0.548);
+            border-radius: 5px;
+            padding: 10px 10px;
+            text-align: center;
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <header class="titles">
+        <h1 class="title title1">Hello, my name is Daniel Shamir</h1>
+        <h3 class="title title2">I am a programmer to be...</h3>
+    </header>
+    <main class="card">
+        <img id="profile-img" src="images/WhatsApp Image 2021-10-25 at 09.46.22.jpeg" alt="my-profile-pic" width="400px">
+        <br>
+        <button id="img-btn" width="50px;" onClick="enlargeImg()" style="width: 200px; height: 30px">Enlarge profile image</button>
+        <p>
+            I'm 28 years old Married + half a &nbsp; year old baby + a two years old female dog. I Live in Kibbutz Gevim(next to Sderot). Last year student of computer science. I always loved computers and ever since my dad brought me my first book in C language ,when I was in elementary school, <br><span>I fell in love with programming.</span>
+        </p>
+    </main>
+    <footer class="social-media">
+        <h4>Follow me:</h4>
+        <ul style="list-style-type: none;">
+            <li class="link first">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img alt="facebook" src="https://www.botanic.co.il/wp-content/uploads/2021/05/facebook-icon-logo-C61047A9E7-seeklogo.com_.png"
+                    width="50" height="50">
+                </a>
+            </li>
+            <li class="link second">
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img alt="linkedin" src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Linkedin.svg"
+                    width="50" height="50">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script>
+    let isImgEnlarged = true;
+    let enlargeImg = () => {
+        if (isImgEnlarged) {
+            document.getElementById('profile-img').style.width = '600px';
+            document.getElementById('img-btn').textContent = 'reduce profile image';
+            isImgEnlarged = false
+        } else {
+            document.getElementById('profile-img').style.width = '500px';
+            document.getElementById('img-btn').textContent = 'Enlarge profile image';
+            isImgEnlarged = true
+        }
+    }
+</script>
+</html>
