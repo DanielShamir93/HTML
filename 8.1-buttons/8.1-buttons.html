@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.1</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 15px 20px;
+    }
+
+    body {
+        background: #32465E;
+        
+    }
+
+    h1 {
+        color: white;
+    }
+
+    button {
+        border: 1px black solid;
+        color: white;
+    }
+    /* first row */
+    .flat-btns button {
+        border: none;
+    }
+    /* second row */
+    .round-btns button {
+        border: none;
+        border-radius: 30px;
+    }
+    /* fourth row */
+    .round-ghost-btns button {
+        border-radius: 30px;
+    }
+    /* first column */
+    .register-btn {
+        padding: 15px 30px;
+        font-size: 2em;
+    }
+    /* second column */
+    .clear-btn {
+        padding: 10px 25px;
+        font-size: 1.5em;
+    }
+    /* third column */
+    .submit-btn {
+        padding: 5px 20px;
+        font-size: 1em;
+    }
+
+</style>
+<body>
+    <div class="wrapper">
+        <section>
+            <h1>Flat</h1>
+            <div class="flat-btns">
+                <button class="register-btn" style="background: #00DD78;">Register</button>
+                <button class="clear-btn" style="background: #F82427;">Clear</button>
+                <button class="submit-btn" style="background: #0E8DD8;">Submit</button>
+            </div>
+        </section>   
+        <section>
+            <h1>Round</h1>
+            <div class="round-btns">
+                <button class="register-btn" style="background: #E5720C;">Register</button>
+                <button class="clear-btn" style="background: #F1CD0E;">Clear</button>
+                <button class="submit-btn" style="background: #7A8A8B;">Submit</button>
+            </div>
+        </section>
+        <section>
+            <h1>Flat Ghost</h1>
+            <div class="ghost-btns">
+                <button class="register-btn" style="background: none; border-color: #00DD78;">Register</button>
+                <button class="clear-btn" style="background: none; border-color: #F82427;">Clear</button>
+                <button class="submit-btn" style="background: none; border-color: #0E8DD8;">Submit</button>
+            </div>
+        </section>
+        <section>
+            <h1>Round ghost</h1>
+            <div class="round-ghost-btns">
+                <button class="register-btn" style="background: none; border-color: #E5720C;">Register</button>
+                <button class="clear-btn" style="background: none; border-color: #F1CD0E;">Clear</button>
+                <button class="submit-btn" style="background: none; border-color: #7A8A8B;">Submit</button>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
