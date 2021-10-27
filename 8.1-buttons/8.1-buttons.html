@@ -12,12 +12,13 @@
         padding: 0;
         box-sizing: border-box;
         text-align: center;
-        margin: 15px 20px;
     }
 
     body {
         background: #32465E;
-        
+        width: 100vw;
+        height: 100vh;
+        padding-top: 20px;
     }
 
     h1 {
@@ -27,20 +28,57 @@
     button {
         border: 1px black solid;
         color: white;
+        margin: 15px 20px;
+        transition: 0.5s;
     }
     /* first row */
     .flat-btns button {
         border: none;
     }
+    
     /* second row */
     .round-btns button {
         border: none;
         border-radius: 30px;
+    }    
+    /* hovers for first two rows */
+    .flat-btns button:hover, .round-btns button:hover {
+        opacity: 0.8;
+    }
+    /* third row */
+    .ghost-btns button {
+        background: transparent;
     }
     /* fourth row */
     .round-ghost-btns button {
         border-radius: 30px;
+        background: transparent;
     }
+    /* hovers for last two rows */
+    .ghost-btns .register-btn:hover {
+        background: #00DD78;
+    }
+
+    .ghost-btns .clear-btn:hover {
+        background: #F82427;
+    }
+
+    .ghost-btns .submit-btn:hover {
+        background: #0E8DD8;
+    }
+
+    .round-ghost-btns .register-btn:hover {
+        background: #E5720C;
+    }
+
+    .round-ghost-btns .clear-btn:hover {
+        background: #F1CD0E;
+    }
+
+    .round-ghost-btns .submit-btn:hover {
+        background: #7A8A8B;
+    }
+
     /* first column */
     .register-btn {
         padding: 15px 30px;
@@ -77,19 +115,19 @@
             </div>
         </section>
         <section>
-            <h1>Flat Ghost</h1>
+            <h1>Flat ghost</h1>
             <div class="ghost-btns">
-                <button class="register-btn" style="background: none; border-color: #00DD78;">Register</button>
-                <button class="clear-btn" style="background: none; border-color: #F82427;">Clear</button>
-                <button class="submit-btn" style="background: none; border-color: #0E8DD8;">Submit</button>
+                <button class="register-btn" style="border-color: #00DD78;">Register</button>
+                <button class="clear-btn" style="border-color: #F82427;">Clear</button>
+                <button class="submit-btn" style="border-color: #0E8DD8;">Submit</button>
             </div>
         </section>
         <section>
             <h1>Round ghost</h1>
             <div class="round-ghost-btns">
-                <button class="register-btn" style="background: none; border-color: #E5720C;">Register</button>
-                <button class="clear-btn" style="background: none; border-color: #F1CD0E;">Clear</button>
-                <button class="submit-btn" style="background: none; border-color: #7A8A8B;">Submit</button>
+                <button class="register-btn" style="border-color: #E5720C;">Register</button>
+                <button class="clear-btn" style="border-color: #F1CD0E;">Clear</button>
+                <button class="submit-btn" style="border-color: #7A8A8B;">Submit</button>
             </div>
         </section>
     </div>
