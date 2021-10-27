@@ -20,17 +20,18 @@
         }
 
         .wrapper {
-            width: 80vw;
+            max-width: 80vw;
             height: 100vh;
             margin-left: 10vw;
         }
 
         nav {
-            background: rgba(219, 210, 125, 0.384);
+            background: rgb(231, 225, 167);
             border-radius: 0 0 20px 20px;
             text-align: center;
             position: sticky;
             top: 0;
+            box-shadow: 3px 3px 20px rgb(189, 180, 104);
         }
 
         nav ul li a {
@@ -39,40 +40,50 @@
             color: rgb(155, 72, 72);
         }
 
-        header {
-            color: rgb(15, 15, 131);
-            margin-left: 30%;
-        }
-
         .title {
-            text-align: left;
+            text-align: center;
         }
 
         .title.t1 {
-            padding-top: 50px;
+            margin-top: 50px;
         }
 
         .title.t2 {
-            padding: 10px 50px;
-        }
-
-        span {
-            color: red;
+            margin-top: 10px;
+            margin-left: 20px;
         }
 
         .img-btn {
+            width: 200px; 
+            height: 30px;
             margin: 10px 0 30px 0;
             font-family: Pacifico;
+            border-radius: 10px 10px;
+            background:rgba(238, 229, 147, 0.479);
+            outline: none;
+            border: 2px solid rgb(233, 223, 136);
+            box-shadow: 2px 2px 10px rgb(233, 223, 136);
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+
+        .img-btn:hover {
+            cursor: pointer;
+            opacity: 1;
         }
 
         .card {
             background: #e6d49f5e;
             margin: 50px auto;
-            box-shadow: 3px 4px  30px rgba(0, 0, 0, 0.548);
-            border-radius: 5px;
+            box-shadow: 3px 3px 20px rgb(189, 180, 104);
+            border-radius: 20px 20px;
             padding: 10px 10px;
             text-align: center;
             width: 700px;
+        }
+
+        span {
+            color: red;
         }
 
         li {
@@ -96,11 +107,11 @@
                 <h3 class="title t2">I am a programmer to be...</h3>
             </header>
             <main class="card">
-                <img id="profile-img" src="images/WhatsApp Image 2021-10-25 at 09.46.22.jpeg" alt="my-profile-pic" width="400px">
+                <img id="profile-img" src="images/WhatsApp Image 2021-10-25 at 09.46.22.jpeg" alt="my-profile-pic" width="50%">
                 <br>
-                <button class="img-btn" width="50px;" onClick="enlargeImg()" style="width: 200px; height: 30px">Enlarge profile image</button>
+                <button class="img-btn" onClick="enlargeImg()">Enlarge profile image</button>
                 <p>
-                    I'm 28 years old Married + half a &nbsp; year old baby + a two years old female dog. I Live in Kibbutz Gevim(next to Sderot). Last year student of computer science. I always loved computers and ever since my dad brought me my first book in C language ,when I was in elementary school, <br><span>I fell in love with programming.</span>
+                    I'm 28 years old Married + half a &nbsp; year old baby + a two years old female dog. I Live in Kibbutz Gevim(next to Sderot). Last year student of computer science. I always loved computers and ever since my dad brought me my first book in C language ,when I was in elementary school, <br><span>I fell in love with programming &#128525;</span>
                 </p>
             </main>
         </section>
